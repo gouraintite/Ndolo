@@ -1,37 +1,85 @@
 {
   "nav": {
-    "home": "Accueil",
-    "centers": "Les centres",
-    "donate": "Faire un don",
-    "login": "Connexion",
-    "register": "S'inscrire",
-    "dashboard": "Tableau de bord"
+    "centres": "Les centres",
+    "how": "Comment ça marche",
+    "trust": "Notre transparence",
+    "report": "Signaler un centre"
   },
-  "home": {
-    "featured_title": "À la une aujourd'hui",
-    "featured_cta": "Voir la cagnotte",
-    "featured_detail": "Voir la page",
-    "children_count": "{{count}} enfant",
-    "children_count_plural": "{{count}} enfants",
-    "listing_title": "Tous les centres",
-    "listing_subtitle": "Découvrez les orphelinats et associations qui ont besoin de votre soutien."
+  "cta": { "support": "Faire un don" },
+  "alaune": "À la une aujourd'hui",
+  "hero": {
+    "eyebrow": "Le centre du jour",
+    "support": "Soutenir ce centre",
+    "discover": "Découvrir"
   },
-  "filters": {
-    "title": "Filtres",
-    "region": "Région",
-    "type": "Type",
-    "trust_level": "Niveau de confiance",
-    "urgent": "Besoin urgent",
+  "kpi": {
+    "children": "enfants accueillis",
+    "years": "ans d'activité",
+    "funded": "de l'objectif"
+  },
+  "cag": { "raised": "levés", "goal": "Objectif" },
+  "val": {
+    "eyebrow": "Pourquoi Ndolo",
+    "title": "Une plateforme bâtie sur la confiance",
+    "1": { "t": "Visibilité", "p": "Nous rendons visibles les orphelinats et associations reculés, ceux qu'aucune aide n'atteint encore." },
+    "2": { "t": "Don sécurisé", "p": "Chaque don passe par un circuit vérifié. Vous savez exactement où va votre contribution." },
+    "3": { "t": "Transparence", "p": "Preuves publiées, fonds suivis, impact documenté. La confiance se prouve, elle ne se promet pas." }
+  },
+  "band": {
+    "eyebrow": "Notre impact, en chiffres",
+    "title": "Des résultats vérifiables, pas des promesses",
+    "1": "centres recensés",
+    "2": "enfants soutenus",
+    "3": "collectés à ce jour",
+    "4": "preuves publiées"
+  },
+  "how": {
+    "eyebrow": "Comment ça marche",
+    "title": "Donner en confiance, en trois temps",
+    "1": { "t": "Découvrir", "p": "Parcourez les centres recensés, leur région, leur histoire et leurs besoins réels." },
+    "2": { "t": "Donner en confiance", "p": "Contribuez à une cagnotte sécurisée. Chaque centre affiche son niveau de vérification." },
+    "3": { "t": "Suivre l'impact", "p": "Recevez les preuves de ce que votre don a permis : reçus, photos, témoignages." }
+  },
+  "centres": {
+    "eyebrow": "Les centres",
+    "title": "Découvrez où votre don change une vie",
+    "all": "Voir tous les centres"
+  },
+  "chip": {
     "all": "Tous",
-    "type_orphanage": "Orphelinat",
-    "type_charity": "Association",
-    "type_aid": "Centre d'aide"
+    "urgent": "Besoin urgent",
+    "certified": "Certifié transparent",
+    "verified": "Vérifié"
   },
+  "card": { "cta": "Soutenir" },
   "trust": {
-    "L0": "Non vérifié",
-    "L1": "Identité confirmée",
-    "L2": "Vérifié",
-    "L3": "Certifié transparent"
+    "certified": "Certifié transparent",
+    "verified": "Vérifié",
+    "unverified": "Non vérifié",
+    "urgent": "Besoin urgent"
+  },
+  "sig": {
+    "eyebrow": "Contribuer autrement",
+    "title": "Vous connaissez un centre qui n'est pas encore ici ?",
+    "p": "Aidez-nous à le rendre visible. Signalez un orphelinat ou une association non recensé : notre équipe le vérifiera avec dignité et rigueur.",
+    "cta": "Signaler un centre",
+    "cta2": "Comment nous vérifions"
+  },
+  "foot": {
+    "mission": "Ndolo rend visibles les orphelinats et associations du Cameroun, et permet d'y donner en toute confiance.",
+    "explore": "Explorer",
+    "about": "À propos",
+    "trust": "Notre transparence",
+    "report": "Signaler un centre",
+    "partners": "Devenir partenaire",
+    "faq": "Questions fréquentes",
+    "help": "Aide",
+    "contact": "Nous contacter",
+    "supportlabel": "Une question ? Appelez notre équipe",
+    "rights": "Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "legal": "Mentions légales"
   },
   "auth": {
     "email": "Adresse e-mail",
@@ -43,9 +91,5 @@
     "register_submit": "S'inscrire",
     "no_account": "Pas encore de compte ?",
     "has_account": "Déjà un compte ?"
-  },
-  "footer": {
-    "tagline": "Relier les donateurs aux centres qui en ont besoin.",
-    "rights": "Tous droits réservés."
   }
 }

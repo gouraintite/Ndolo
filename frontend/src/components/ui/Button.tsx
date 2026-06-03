@@ -1,35 +1,35 @@
-import type { ButtonHTMLAttributes } from 'react'
+import type { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 
-type Variant = 'primary' | 'secondary' | 'ghost'
-type Size = 'sm' | 'md' | 'lg'
+type Variant = 'primary' | 'gradient' | 'ghost' | 'ghost-dark' | 'on-dark'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant
-  size?: Size
+  size?: 'sm' | 'md'
   loading?: boolean
 }
 
-const variantClasses: Record<Variant, string> = {
-  primary: 'bg-primary text-white hover:bg-primary/90',
-  secondary: 'border border-primary text-primary hover:bg-primary/10',
-  ghost: 'text-primary hover:bg-primary/10',
+interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  variant?: Variant
+  size?: 'sm' | 'md'
 }
 
-const sizeClasses: Record<Size, string> = {
-  sm: 'px-3 py-1.5 text-sm',
-  md: 'px-5 py-2.5 text-base',
-  lg: 'px-7 py-3.5 text-lg',
+function cls(variant: Variant, size?: string) {
+  return `btn btn--${variant}${size === 'sm' ? ' btn--sm' : ''}`
 }
 
-export function Button({ variant = 'primary', size = 'md', loading, children, className = '', disabled, ...props }: ButtonProps) {
+export function Button({ variant = 'primary', size, loading, children, className = '', disabled, ...props }: ButtonProps) {
   return (
-    <button
-      {...props}
-      disabled={disabled || loading}
-      className={`inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 disabled:opacity-50 disabled:cursor-not-allowed ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
-    >
-      {loading ? <span className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" /> : null}
+    <button {...props} disabled={disabled || loading} className={`${cls(variant, size)} ${className}`}>
+      {loading && <span style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid currentColor', borderTopColor: 'transparent', animation: 'spin 0.7s linear infinite' }} />}
       {children}
     </button>
+  )
+}
+
+export function LinkButton({ variant = 'primary', size, children, className = '', ...props }: LinkButtonProps) {
+  return (
+    <a {...props} className={`${cls(variant, size)} ${className}`}>
+      {children}
+    </a>
   )
 }

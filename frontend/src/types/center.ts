@@ -1,20 +1,39 @@
-export type TrustLevel = 'L0' | 'L1' | 'L2' | 'L3'
+export type TrustLevel = 'certified' | 'verified' | 'unverified'
 export type CenterType = 'Orphanage' | 'Charity' | 'AidCenter'
 export type CagnotteStatus = 'Draft' | 'Active' | 'Funded' | 'Suspended' | 'Closed'
+export type FilterKey = 'all' | 'urgent' | 'certified' | 'verified'
+
+export interface LocalizedString {
+  fr: string
+  en: string
+}
+
+export interface FeaturedCenter {
+  id: string
+  name: LocalizedString
+  region: LocalizedString
+  desc: LocalizedString
+  trust: TrustLevel
+  urgent?: boolean
+  children: number
+  years: number
+  raised: number
+  goal: number
+  glowX: string
+  glowY: string
+  glowI: number
+  src: string
+}
 
 export interface Center {
   id: string
-  name: string
-  type: CenterType
-  description: string
-  region: string
-  trustLevel: TrustLevel
-  heroImageUrl?: string
-  childrenCount?: number
-  activeCagnotteId?: string
-  activeCagnotteTitle?: string
-  activeCagnotteGoal?: number
-  activeCagnotteRaised?: number
+  name: LocalizedString
+  region: LocalizedString
+  trust: TrustLevel
+  urgent?: boolean
+  raised: number
+  goal: number
+  coverImage?: string
 }
 
 export interface Cagnotte {

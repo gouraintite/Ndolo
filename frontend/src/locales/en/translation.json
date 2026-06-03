@@ -1,37 +1,85 @@
 {
   "nav": {
-    "home": "Home",
-    "centers": "Centers",
-    "donate": "Donate",
-    "login": "Login",
-    "register": "Sign up",
-    "dashboard": "Dashboard"
+    "centres": "Centres",
+    "how": "How it works",
+    "trust": "Our transparency",
+    "report": "Report a centre"
   },
-  "home": {
-    "featured_title": "Featured today",
-    "featured_cta": "See campaign",
-    "featured_detail": "View page",
-    "children_count": "{{count}} child",
-    "children_count_plural": "{{count}} children",
-    "listing_title": "All centers",
-    "listing_subtitle": "Discover the orphanages and associations that need your support."
+  "cta": { "support": "Donate" },
+  "alaune": "Featured today",
+  "hero": {
+    "eyebrow": "Centre of the day",
+    "support": "Support this centre",
+    "discover": "Discover"
   },
-  "filters": {
-    "title": "Filters",
-    "region": "Region",
-    "type": "Type",
-    "trust_level": "Trust level",
-    "urgent": "Urgent need",
+  "kpi": {
+    "children": "children cared for",
+    "years": "years of activity",
+    "funded": "of goal raised"
+  },
+  "cag": { "raised": "raised", "goal": "Goal" },
+  "val": {
+    "eyebrow": "Why Ndolo",
+    "title": "A platform built on trust",
+    "1": { "t": "Visibility", "p": "We make remote orphanages and charities visible — the ones no aid reaches yet." },
+    "2": { "t": "Secure giving", "p": "Every donation flows through a verified channel. You know exactly where your gift goes." },
+    "3": { "t": "Transparency", "p": "Published proof, tracked funds, documented impact. Trust is proven, not promised." }
+  },
+  "band": {
+    "eyebrow": "Our impact, in numbers",
+    "title": "Verifiable results, not promises",
+    "1": "centres listed",
+    "2": "children supported",
+    "3": "raised to date",
+    "4": "proofs published"
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Give with confidence, in three steps",
+    "1": { "t": "Discover", "p": "Browse listed centres — their region, their story and their real needs." },
+    "2": { "t": "Give with confidence", "p": "Contribute to a secure fund. Each centre shows its verification level." },
+    "3": { "t": "Follow the impact", "p": "Receive proof of what your gift achieved: receipts, photos, testimonies." }
+  },
+  "centres": {
+    "eyebrow": "The centres",
+    "title": "See where your gift changes a life",
+    "all": "See all centres"
+  },
+  "chip": {
     "all": "All",
-    "type_orphanage": "Orphanage",
-    "type_charity": "Charity",
-    "type_aid": "Aid center"
+    "urgent": "Urgent need",
+    "certified": "Certified transparent",
+    "verified": "Verified"
   },
+  "card": { "cta": "Support" },
   "trust": {
-    "L0": "Unverified",
-    "L1": "Identity confirmed",
-    "L2": "Verified",
-    "L3": "Certified transparent"
+    "certified": "Certified transparent",
+    "verified": "Verified",
+    "unverified": "Not verified",
+    "urgent": "Urgent need"
+  },
+  "sig": {
+    "eyebrow": "Contribute differently",
+    "title": "Know a centre that isn't listed yet?",
+    "p": "Help us make it visible. Report an unlisted orphanage or charity — our team will verify it with dignity and rigour.",
+    "cta": "Report a centre",
+    "cta2": "How we verify"
+  },
+  "foot": {
+    "mission": "Ndolo makes Cameroon's orphanages and charities visible, and lets you give to them with full confidence.",
+    "explore": "Explore",
+    "about": "About",
+    "trust": "Our transparency",
+    "report": "Report a centre",
+    "partners": "Become a partner",
+    "faq": "FAQ",
+    "help": "Help",
+    "contact": "Contact us",
+    "supportlabel": "A question? Call our team",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "legal": "Legal notice"
   },
   "auth": {
     "email": "Email address",
@@ -43,9 +91,5 @@
     "register_submit": "Sign up",
     "no_account": "No account yet?",
     "has_account": "Already have an account?"
-  },
-  "footer": {
-    "tagline": "Connecting donors to centers that need it.",
-    "rights": "All rights reserved."
   }
 }
