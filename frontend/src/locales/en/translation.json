@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "centers": "Centers",
+    "donate": "Donate",
+    "login": "Login",
+    "register": "Sign up",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "featured_title": "Featured today",
+    "featured_cta": "See campaign",
+    "featured_detail": "View page",
+    "children_count": "{{count}} child",
+    "children_count_plural": "{{count}} children",
+    "listing_title": "All centers",
+    "listing_subtitle": "Discover the orphanages and associations that need your support."
+  },
+  "filters": {
+    "title": "Filters",
+    "region": "Region",
+    "type": "Type",
+    "trust_level": "Trust level",
+    "urgent": "Urgent need",
+    "all": "All",
+    "type_orphanage": "Orphanage",
+    "type_charity": "Charity",
+    "type_aid": "Aid center"
+  },
+  "trust": {
+    "L0": "Unverified",
+    "L1": "Identity confirmed",
+    "L2": "Verified",
+    "L3": "Certified transparent"
+  },
+  "auth": {
+    "email": "Email address",
+    "password": "Password",
+    "phone": "Phone (optional)",
+    "login_title": "Login",
+    "login_submit": "Sign in",
+    "register_title": "Create an account",
+    "register_submit": "Sign up",
+    "no_account": "No account yet?",
+    "has_account": "Already have an account?"
+  },
+  "footer": {
+    "tagline": "Connecting donors to centers that need it.",
+    "rights": "All rights reserved."
+  }
+}

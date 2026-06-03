@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "centers": "Les centres",
+    "donate": "Faire un don",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "dashboard": "Tableau de bord"
+  },
+  "home": {
+    "featured_title": "À la une aujourd'hui",
+    "featured_cta": "Voir la cagnotte",
+    "featured_detail": "Voir la page",
+    "children_count": "{{count}} enfant",
+    "children_count_plural": "{{count}} enfants",
+    "listing_title": "Tous les centres",
+    "listing_subtitle": "Découvrez les orphelinats et associations qui ont besoin de votre soutien."
+  },
+  "filters": {
+    "title": "Filtres",
+    "region": "Région",
+    "type": "Type",
+    "trust_level": "Niveau de confiance",
+    "urgent": "Besoin urgent",
+    "all": "Tous",
+    "type_orphanage": "Orphelinat",
+    "type_charity": "Association",
+    "type_aid": "Centre d'aide"
+  },
+  "trust": {
+    "L0": "Non vérifié",
+    "L1": "Identité confirmée",
+    "L2": "Vérifié",
+    "L3": "Certifié transparent"
+  },
+  "auth": {
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "phone": "Téléphone (optionnel)",
+    "login_title": "Connexion",
+    "login_submit": "Se connecter",
+    "register_title": "Créer un compte",
+    "register_submit": "S'inscrire",
+    "no_account": "Pas encore de compte ?",
+    "has_account": "Déjà un compte ?"
+  },
+  "footer": {
+    "tagline": "Relier les donateurs aux centres qui en ont besoin.",
+    "rights": "Tous droits réservés."
+  }
+}

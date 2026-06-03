@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Design tokens — will be populated from Canva/Claude Design output */
+:root {
+  --color-primary: #2563eb; /* placeholder — override with brand color */
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+}

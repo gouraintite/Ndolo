@@ -1,0 +1,28 @@
+name: Backend CI
+
+on:
+  push:
+    paths: ["backend/**"]
+  pull_request:
+    paths: ["backend/**"]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+      - name: Restore
+        run: dotnet restore backend/Ndolo.slnx
+      - name: Build
+        run: dotnet build backend/Ndolo.slnx --no-restore -c Release
+      - name: Test
+        run: dotnet test backend/Ndolo.slnx --no-build -c Release --logger "trx;LogFileName=results.trx"
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: "**/*.trx"

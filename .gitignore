@@ -1,0 +1,51 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+appsettings.Development.json
+secrets.json
+*.pfx
+
+# EF Migrations snapshot conflicts (keep migrations, ignore snapshot in merges)
+# Uncomment if needed: **/ApplicationDbContextModelSnapshot.cs
+
+# Node / Frontend
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Claude Code (plans, memory — personal IDE data)
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test output
+TestResults/
+*.trx
+
+# Dotnet publish output
+publish/
+
+# Logs
+logs/
+*.log

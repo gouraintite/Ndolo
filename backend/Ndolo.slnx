@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Ndolo.Api.Tests/Ndolo.Api.Tests.csproj" />
+  <Project Path="Ndolo.Api/Ndolo.Api.csproj" />
+</Solution>

@@ -1,0 +1,15 @@
+name: Docker Build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build API image
+        run: docker build -t ndolo-api ./backend/Ndolo.Api
+      - name: Build Frontend image
+        run: docker build -t ndolo-frontend ./frontend
