@@ -59,6 +59,7 @@ builder.Services.AddHangfireServer();
 // App services
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<ICenterService, CenterService>();
 builder.Services.AddScoped<IPaymentProvider, MockPaymentProvider>();
 builder.Services.AddScoped<INotificationService, MockNotificationService>();
 builder.Services.AddScoped<IStorageProvider, MockStorageProvider>();
@@ -92,6 +93,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseHangfireDashboard("/hangfire");
 app.MapControllers();
+
+// Migrate DB and seed in development
+if (app.Environment.IsDevelopment())
+    await DbSeeder.SeedAsync(app.Services);
 
 app.Run();
 

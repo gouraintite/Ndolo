@@ -3,7 +3,7 @@ import type { LoginRequest, LoginResponse, RegisterRequest } from '@/types/auth'
 
 export const authApi = {
   register: (data: RegisterRequest) =>
-    client.post<LoginResponse>('/api/auth/register', data).then((r) => r.data),
+    client.post<RegisterRequest>('/api/auth/register', data).then((r) => r.data),
 
   login: (data: LoginRequest) =>
     client.post<LoginResponse>('/api/auth/login', data).then((r) => r.data),

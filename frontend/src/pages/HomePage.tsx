@@ -5,7 +5,7 @@ import { FeaturedCenter } from '@/features/centers/FeaturedCenter'
 import { CenterCard } from '@/features/centers/CenterCard'
 import { CenterFilters } from '@/features/centers/CenterFilters'
 import { ImageSlot } from '@/components/ui/ImageSlot'
-import { MOCK_CENTRES } from '@/api/centers'
+import { useCenters } from '@/hooks/useCenters'
 import type { FilterKey } from '@/types/center'
 import mission from '@/assets/images/mission.jpg'
 
@@ -87,13 +87,7 @@ export function HomePage() {
   const [filter, setFilter] = useState<FilterKey>('all')
   useReveal()
 
-  const filtered = MOCK_CENTRES.filter((c) => {
-    if (filter === 'all') return true
-    if (filter === 'urgent') return !!c.urgent
-    if (filter === 'certified') return c.trust === 'certified'
-    if (filter === 'verified') return c.trust === 'verified' || c.trust === 'certified'
-    return true
-  })
+  const { centers: filtered, isLoading } = useCenters(filter)
 
   return (
     <PublicLayout>
@@ -191,9 +185,13 @@ export function HomePage() {
           </div>
           <CenterFilters active={filter} onChange={setFilter} />
           <div className="grid-centres">
-            {filtered.map((c) => (
-              <CenterCard key={c.id} center={c} src={c.coverImage} />
-            ))}
+            {isLoading
+              ? Array.from({ length: 6 }).map((_, i) => (
+                  <div key={i} className="card" style={{ minHeight: 320, opacity: 0.5, background: 'var(--surface-2)' }} />
+                ))
+              : filtered.map((c) => (
+                  <CenterCard key={c.id} center={c} src={c.coverImage} />
+                ))}
           </div>
           <div className="centres__foot">
             <a className="btn btn--ghost" href="#">

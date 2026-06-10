@@ -3,9 +3,20 @@ import type { InputHTMLAttributes } from 'react'
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string
   error?: string
+  dark?: boolean
 }
 
-export function Input({ label, error, id, className = '', ...props }: InputProps) {
+export function Input({ label, error, id, dark, className = '', ...props }: InputProps) {
+  if (dark) {
+    return (
+      <div className="input-dark">
+        {label && <label htmlFor={id}>{label}</label>}
+        <input id={id} {...props} className={className} />
+        {error && <p className="input-error">{error}</p>}
+      </div>
+    )
+  }
+
   return (
     <div className="flex flex-col gap-1">
       {label && (
